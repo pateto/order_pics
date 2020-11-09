@@ -25,7 +25,6 @@ def copy_move_files(move=False):
 
     img_extensions = [".jpg", ".JPG", ".jpeg", ".JPEG",  ".png", ".PNG",
                       ".gif", ".bmp", ".MOV", ".mp4", ".MP4"]
-    #img_extensions = [".MOV", ".MP4"]
 
     for path in Path(dir).rglob('*'):
         name, ext = os.path.splitext(path)
