@@ -5,9 +5,10 @@ import shutil
 from pathlib import Path
 from collections import Counter
 from PIL import Image
+import pdb
 
-dir = '/home/pateto/Pictures/pics'
-output_dir = '/media/pateto/Pateto WD/pics'
+dir = 'C:\\Users\\cace_al\\Desktop\\img\\pics'
+output_dir = 'E:\\pics'
 
 
 def count_extensions():
@@ -21,10 +22,10 @@ def count_extensions():
     print(Counter(files))
 
 
-def copy_move_files(move=False):
+def copy_move_files(move=False):    
 
     img_extensions = [".jpg", ".JPG", ".jpeg", ".JPEG",  ".png", ".PNG",
-                      ".gif", ".bmp", ".MOV", ".mp4", ".MP4"]
+                      ".gif", ".GIF", ".bmp", ".MOV", ".mp4", ".MP4"]
 
     for path in Path(dir).rglob('*'):
         name, ext = os.path.splitext(path)
